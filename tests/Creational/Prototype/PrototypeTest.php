@@ -8,12 +8,15 @@ use PHPUnit\Framework\TestCase;
 
 class PrototypeTest extends TestCase
 {
-    public function testTest()
+    public function testObjectCanBeCloned()
     {
-        $post = new Post('My post title', 'Some post content.', new Author('Taras'));
-        $draftPost = clone $post;
+        $author = new Author('Taras');
+        $post = new Post('My post title', 'Some post content.', $author);
         
-        $this->assertInstanceOf(Post::class, $draftPost);
-        $this->assertSame($draftPost->getTitle(), 'MY POST TITLE COPY');
+        $postCopy = clone $post;
+        
+        $this->assertInstanceOf(Post::class, $postCopy);
+        $this->assertSame($postCopy->getTitle(), 'MY POST TITLE COPY');
+        $this->assertNotSame($post->author, $postCopy->author);
     }
 }
