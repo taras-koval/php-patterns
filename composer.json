@@ -1,0 +1,32 @@
+{
+    "name": "taras-koval/design-patterns",
+    "type": "project",
+    "description": "",
+    "keywords": ["design-patterns"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taras Koval",
+            "email": "tkoval37@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.1",
+        "phpunit/phpunit": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
