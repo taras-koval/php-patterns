@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Creational\Singleton;
+namespace Creational;
 
 use App\Creational\Singleton\Singleton;
 use Exception;

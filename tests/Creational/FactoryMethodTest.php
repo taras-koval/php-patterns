@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Creational\FactoryMethod;
+namespace Creational;
 
 use App\Creational\FactoryMethod\LaptopProduct;
 use App\Creational\FactoryMethod\ProductFactory;

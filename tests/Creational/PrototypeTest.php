@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Creational\Prototype;
+namespace Creational;
 
 use App\Creational\Prototype\Author;
 use App\Creational\Prototype\Post;
